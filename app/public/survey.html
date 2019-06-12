@@ -6,114 +6,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Friend Finder-Survey</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-        <!-- JQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Javascript -->
-    <script src="assets/javascript/app.js"></script>
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <h1> Survey </h1>
+    <div class="container">
+        <div id="headbox">
+            <h2> Find your your match! </h2>
+        </div>
 
-    <form id="survey">
-        <div class="row" id="q1">
-            <div class="input-field col s12 m6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="fullname" type="text" class="validate" name="fullname" required>
-                <label for="fullname">Full Name</label>
+        <form id="survey">
+            <div class="row" id="q1">
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="fullname" type="text" class="validate" name="fullname" required>
+                    <label for="fullname">Full Name</label>
+                </div>
+                <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">📸</i>
+                    <input id="image" type="text" class="validate" name="image" required>
+                    <label for="image">Photo URL</label>
+                </div>
             </div>
-            <div class="input-field col s12 m6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="image" type="text" class="validate" name="image" required>
-                <label for="image">Photo URL</label>
-            </div>
-        </div>
-        <div class="row" id="q2">
-            <div class="col s12">
-                <p class="range-field">
-                    <input type="range" min="1" max="5" class="score" required/>
-                </p>
-            </div>
-        </div>
-        <div class="row" id="q2">
-            <div class="col s12">
-                <p class="range-field">
-                    <input type="range" min="1" max="5" class="score" required/>
-                </p>
-            </div>
-        </div>
-        <div class="row" id="q2">
-            <div class="col s12">
-                <p class="range-field">
-                    <input type="range" min="1" max="5" class="score" required/>
-                </p>
-            </div>
-        </div>
-        <div class="row" id="q2">
-            <div class="col s12">
-                <p class="range-field">
-                    <input type="range" min="1" max="5" class="score" required/>
-                </p>
-            </div>
-        </div>
-        <div class="row" id="q2">
-            <div class="col s12">
-                <p class="range-field">
-                    <input type="range" min="1" max="5" class="score" required/>
-                </p>
-            </div>
-        </div>
-        <div class="row" id="q2">
-            <div class="col s12">
-                <p class="range-field">
-                    <input type="range" min="1" max="5" class="score" required/>
-                </p>
-            </div>
-        </div>
-        <div class="row" id="q2">
-            <div class="col s12">
-                <p class="range-field">
-                    <input type="range" min="1" max="5" class="score" required/>
-                </p>
-            </div>
-        </div>
-        <div class="row" id="q2">
-            <div class="col s12">
-                <p class="range-field">
-                    <input type="range" min="1" max="5" class="score" required/>
-                </p>
-            </div>
-        </div>
-        <div class="row" id="q2">
-            <div class="col s12">
-                <p class="range-field">
-                    <input type="range" min="1" max="5" class="score" required/>
-                </p>
-            </div>
-        </div>
-        <div class="row" id="q2">
+            <div class="row" id="q2">
                 <div class="col s12">
                     <p class="range-field">
-                        <input type="range" min="1" max="5" class="score" required/>
+                            <label>You like to get weird in the desert</label>
+                        <input type="range" min="1" max="5" class="score" required />
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="q2">
+                <div class="col s12">
+                    <p class="range-field">
+                        <input type="range" min="1" max="5" class="score" required />
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="q2">
+                <div class="col s12">
+                    <p class="range-field">
+                        <input type="range" min="1" max="5" class="score" required />
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="q2">
+                <div class="col s12">
+                    <p class="range-field">
+                        <input type="range" min="1" max="5" class="score" required />
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="q2">
+                <div class="col s12">
+                    <p class="range-field">
+                        <input type="range" min="1" max="5" class="score" required />
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="q2">
+                <div class="col s12">
+                    <p class="range-field">
+                        <input type="range" min="1" max="5" class="score" required />
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="q2">
+                <div class="col s12">
+                    <p class="range-field">
+                        <input type="range" min="1" max="5" class="score" required />
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="q2">
+                <div class="col s12">
+                    <p class="range-field">
+                        <input type="range" min="1" max="5" class="score" required />
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="q2">
+                <div class="col s12">
+                    <p class="range-field">
+                        <input type="range" min="1" max="5" class="score" required />
+                    </p>
+                </div>
+            </div>
+            <div class="row" id="q2">
+                <div class="col s12">
+                    <p class="range-field">
+                        <input type="range" min="1" max="5" class="score" required />
                     </p>
                 </div>
             </div>
 
-        <button class="btn waves-effect waves-light" id="submit" name="action">Submit
-            <i class="material-icons right">send</i>
-        </button>
-    </form>
+            <button class="btn waves-effect waves-light" id="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
 
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Javascript -->
+    <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>

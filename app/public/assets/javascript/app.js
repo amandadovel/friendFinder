@@ -17,9 +17,13 @@ $(document).ready(function(){
 
             $.post("/api/friends", user, function(response){
             console.log(response);
+                $('.modal').modal();
             })
         } else {
             alert("Check form and resubmit");
         }
     })
+   
 })
+
+

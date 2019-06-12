@@ -1,0 +1,61 @@
+body {
+    background: url("../images/love.jpg")no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: right;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+/* home page style */
+
+#infobox {
+    background-color: #dfd7cec0;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    right: 110px;
+    box-shadow: 2px 2px 10px 2px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.btn, .btn-large, .btn-small {
+    text-decoration: none;
+    color: #fff;
+    background-color:#335569 !important;
+    text-align: center;
+    letter-spacing: .5px;
+    border-radius: 5px;
+}
+
+.subbtn:hover {
+    box-shadow: 2px 2px 10px 2px;
+}
+
+/* Survey page style */
+
+h2 {
+    text-align: right;
+    font-family: 'Black Han Sans', sans-serif;
+    margin-right: -120px;
+}
+
+#survey {
+        background-color:#dfd7cec0;
+        width: 50%;
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        right: 80px;
+        box-shadow: 2px 2px 10px 2px;
+        border-radius: 5px;
+        font-size: 22px;
+    }
+
+    .thumb, .score {
+        background-color:#335569 !important;
+    }
+

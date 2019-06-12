@@ -20,6 +20,7 @@
   "homepage": "https://github.com/amandadovel/friendFinder#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "nouislider": "^13.1.5",
     "path": "^0.12.7"
   }
 }
