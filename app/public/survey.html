@@ -39,8 +39,14 @@
             <div class="row" id="q2">
                 <div class="col s12">
                     <p class="range-field">
-                            <label>You like to get weird in the desert</label>
+                            <div id="questions">You like to get weird in the desert</div>
                         <input type="range" min="1" max="5" class="score" required />
+                        <div class="range-text">
+                            <span>Strongly Disagree</span>
+                            <span>Meh</span>
+                            <span>Strongly Agree</span>
+                            
+                        </div>
                     </p>
                 </div>
             </div>
@@ -108,7 +114,7 @@
                 </div>
             </div>
 
-            <button class="btn waves-effect waves-light" id="submit" name="action">Submit
+            <button class="btn waves-effect waves-light" id="submit" name="action" data-target="modal1">Submit
                 <i class="material-icons right">send</i>
             </button>
         </form>
@@ -118,6 +124,8 @@
             <div class="modal-content">
                 <h4>Modal Header</h4>
                 <p>A bunch of text</p>
+                <div id="match-name"></div>
+                <img src="#" id="match-image" alt="best match image" width="100%">
             </div>
             <div class="modal-footer">
                 <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>

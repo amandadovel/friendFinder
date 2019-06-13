@@ -17,6 +17,8 @@ $(document).ready(function(){
 
             $.post("/api/friends", user, function(response){
             console.log(response);
+                $("#match-name").text(response.name);
+                $("#match-image").attr("src", response.image);
                 $('.modal').modal();
             })
         } else {
