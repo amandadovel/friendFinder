@@ -1,7 +1,7 @@
 module.exports = [
     {
-        name: "Candi",
-        image: "./public/assets/images/sergiopink.jpg",
+        name: "Sapphire",
+        image: "../public/assets/images/sergiopink.jpg",
         scores: [
             "2",
             "1",
@@ -18,7 +18,7 @@ module.exports = [
 
     {
         name: "Sergio",
-        image: "./public/assets/images/candiceblue.jpg",
+        image: "../public/assets/images/candiceblue.jpg",
         scores: [
             "2",
             "1",
@@ -35,7 +35,7 @@ module.exports = [
 
     {
         name: "Tetre",
-        image: "./public/assets/images/tetregreen.jpg",
+        image: "../public/assets/images/tetregreen.jpg",
         scores: [
             "2",
             "5",
@@ -52,7 +52,7 @@ module.exports = [
 
     {
         name: "Denz",
-        image: "./public/assets/images/denielbackflip.jpg",
+        image: "../public/assets/images/denielbackflip.jpg",
         scores: [
             "2",
             "1",
@@ -69,7 +69,7 @@ module.exports = [
 
     {
         name: "Pixel",
-        image: "./public/assets/images/cloudypixel.jpg",
+        image: "../public/assets/images/cloudypixel.jpg",
         scores: [
             "2",
             "1",
@@ -86,7 +86,7 @@ module.exports = [
 
     {
         name: "Yogini",
-        image: "./public/assets/images/yogini.jpg",
+        image: "../public/assets/images/yogini.jpg",
         scores: [
             "2",
             "1",

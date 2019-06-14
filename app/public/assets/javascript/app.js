@@ -20,6 +20,7 @@ $(document).ready(function(){
                 $("#match-name").text(response.name);
                 $("#match-image").attr("src", response.image);
                 $('.modal').modal();
+                $("#modal1").modal("open");
             })
         } else {
             alert("Check form and resubmit");
