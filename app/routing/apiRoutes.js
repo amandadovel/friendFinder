@@ -1,4 +1,10 @@
 var friendsList = require("../data/friends");
+var uuid = require("uuid/v4");
+var AWS = require("aws-sdk");
+var s3 = new AWS.S3({
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+})
 
 module.exports = function (app) {
     // A GET route with the url /api/friends. This will be used to display a JSON of all possible friends.
@@ -7,10 +13,17 @@ module.exports = function (app) {
     });
 
     app.post("/api/friends", function (req, res) {
+        var imageName = req.body.name.toLowerCase();
+        imageName = imageName.replace(/\s/g, '');
+        imageName = imageName + uuid();
         // take new friend's scores and compare scores against each of the friends in the friends list
         // create variable that holds the array of new friends scores
         // create a variable that holds arbitrary large number to compare against
-        var newFriend = req.body;
+        var newFriend = {
+            name: req.body.name,
+            scores: req.body.scores,
+            image: imageName
+        };
         var newFriendScores = newFriend.scores;
         var lowestDiff = 1000;
         var match;
@@ -34,15 +47,33 @@ module.exports = function (app) {
                     match = currentFriend
                 }
             }
+            uploadImage(req,newFriend.image);
             friendsList.push(newFriend);
             res.json(match);
             
         } else {
+            uploadImage(req,newFriend.image);
             friendsList.push(newFriend);
-            res.json({
-                message: "Sorry no friend match was found."
-            });
+            res.json(null);
         }
-        
     });
+}
+function uploadImage(req,image) {
+    var imageFile = req.files.file.data;
+
+    s3.createBucket(function(){
+        var params = {
+            Bucket: process.env.S3_BUCKET_NAME, 
+            Key: `${image}.jpg`,
+            Body: imageFile 
+        }
+        s3.upload(params,function(err, data) {
+            if(err) {
+                console.log("error with upload");
+                console.log(err);
+            }
+            console.log("Upload Success");
+            console.log(data);
+        })
+    })
 }

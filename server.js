@@ -2,12 +2,14 @@
 // app setup
 var express = require("express");
 var app = express();
+var fileUpload = require("express-fileupload");
 var PORT = process.env.PORT || 3000;
 
 // App configuration
 // Sets Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(fileUpload());
 app.use(express.static("./app/public/"));
 
 //Set up routing
