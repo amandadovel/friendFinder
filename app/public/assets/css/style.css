@@ -8,6 +8,11 @@ h1 {
     font-family: 'Black Han Sans', sans-serif;
 }
 
+#fullname, #image {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 .range-text {
     display: flex;
     justify-content: space-between;
@@ -42,6 +47,7 @@ input {
     box-shadow: 2px 2px 10px 2px;
     border-radius: 5px;
     font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .btn, .btn-large, .btn-small {
@@ -75,14 +81,39 @@ h2 {
         box-shadow: 2px 2px 10px 2px;
         border-radius: 5px;
         font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
     }
 
     .thumb, .score {
         background-color:#335569 !important;
     }
 
+   .score {
+        background-color: black !important;
+    }
+
     input[type=range]::-webkit-slider-thumb {
         background-color: #335569;
       }
+
+      /* modal style */
+    h4 {
+        text-align: center;
+        font-family: 'Black Han Sans', sans-serif;
+    }
+
+    #match-name {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    input[type=text]:not(.browser-default):focus:not([readonly]) {
+        border-bottom: 1px solid #335569;
+        -webkit-box-shadow: 0 1px 0 0 #335569;
+        box-shadow: 0 1px 0 0 #335569;
+    }
+  
+
+
   
 
