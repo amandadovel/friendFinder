@@ -3,8 +3,6 @@ https://floating-anchorage-38733.herokuapp.com/
 
 This is a compatibility-based "Friend Finder" application -- basically a dating app. The site will take in results from users' surveys, then will compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.
 
-<img src="friendFinderHomepage.png" alt="Friend Findder home image">
-
 ## Functionality 💪
 #### Here's how the app works: 
 1. Welcome to Friend Finders!
