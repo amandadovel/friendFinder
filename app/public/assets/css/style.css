@@ -112,6 +112,10 @@ h2 {
         -webkit-box-shadow: 0 1px 0 0 #335569;
         box-shadow: 0 1px 0 0 #335569;
     }
+
+    .modal {  
+        max-height: 100% !important; 
+    }
   
 
 
